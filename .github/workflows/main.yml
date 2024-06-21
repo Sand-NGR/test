@@ -3,7 +3,7 @@ name: test and deploy
 on:
   push:
     branches:
-      - 'releases/**'
+      - 'main/**'
     # paths:
     #   - '**.js'
 
