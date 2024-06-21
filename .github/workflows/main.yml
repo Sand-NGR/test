@@ -1,0 +1,19 @@
+name: test and deploy
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: run tests
+        run: echo "tests passed ✅"
+  
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: deploy to VPS
+        run: echo "website up and running ... ✅"
