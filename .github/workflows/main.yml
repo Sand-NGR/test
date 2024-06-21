@@ -1,7 +1,11 @@
 name: test and deploy
 
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - 'releases/**'
+    # paths:
+    #   - '**.js'
 
 jobs:
   test:
