@@ -34,4 +34,6 @@ jobs:
         run: "echo Runner OS is: ${{ runner.os }}"
 
       - name: Print Github Context
-        run: echo ${{ toJson(github) }}
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: echo "$GITHUB_CONTEXT"
